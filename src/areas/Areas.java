@@ -6,11 +6,13 @@ import javax.swing.JOptionPane;
 public class Areas {
 
 	public static void main(String[] args) {
-		// The below comment should be removed!
+		// e: The below comment should be removed!
 		// TODO Auto-generated method stub
-		//The below comment should be removed!
+		// e: The below comment should be removed!
 		// El men� va aqu�
-
+		// e: Is this a constant? If so, we have to declare it
+		// e: as static int, what modifier should we use?
+		// e: Be careful with your identation!
          int seleccion = 0;
 
 		@SuppressWarnings("resource")
@@ -29,6 +31,11 @@ public class Areas {
              System.out.println();
 
              int opcion = scan.nextInt();
+
+						 //e: your code would be more compact and elegant if a
+						 //e: do you think using ADIOS is the most proper way
+						 //e: to print out an exit statement?
+						 //switch statement is used
 
              if(opcion==0) {
             	 System.out.println("ADIOS");
@@ -61,6 +68,8 @@ public class Areas {
                  	System.out.println("No es un numero");
              	}
              }
+
+						 //e: remove this kind of comments
 // ----------------------------------------------------------------------------------------- AQUI empieza el triangulo
              else if(opcion==2) {
 
@@ -76,6 +85,8 @@ public class Areas {
 
 
             	 } else {
+
+							 // e: there should be a better way to name a variable
             	 Triangulo Tria = new Triangulo();
             	 Tria.setBase(baseT);
             	 Tria.setAltura(alturaT);
@@ -99,6 +110,7 @@ public class Areas {
             	 double base=Double.parseDouble(JOptionPane.showInputDialog("Introduzca la base:"));
             	 double altura=Double.parseDouble(JOptionPane.showInputDialog("Introduzca la altura:"));
 
+							 // e: what if base=altura=0, would it be valid?
             	 if(base<0 || altura <0) {
 
             		 System.out.println("No se pueden utilizar valores negativos, no es logico");
@@ -114,7 +126,10 @@ public class Areas {
             	 JOptionPane.showMessageDialog(null, "El area del rectangulo es: "+Rec.area());
 
             	 }
+							 // e: explain try-catch blocks
             	 } catch (NumberFormatException ex){
+								 // e: try to use ex variable to get the stacktrace of
+								 // the exception
                  	System.out.println("No es un numero");
              	}
 
@@ -128,6 +143,7 @@ public class Areas {
          }
 
      }catch (NumberFormatException ex){
+			 		//Output should be displayed in english
          	System.out.println("No es un n�mero");
      	}
 

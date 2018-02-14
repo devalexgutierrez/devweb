@@ -8,7 +8,7 @@ public class Areas {
 	public static void main(String[] args) {
 		// The below comment should be removed!
 		// TODO Auto-generated method stub
-
+		//The below comment should be removed!
 		// El men� va aqu�
 
          int seleccion = 0;

@@ -4,7 +4,8 @@
     Date: 07/02/2018
     */
     interface AreaFig 
-    {    
+    {
+    // e: constant pi already included in Math library    
     public double pi = 3.14;    
     public double calculate(double x,double y,double z);    
     }    

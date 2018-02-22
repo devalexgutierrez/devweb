@@ -120,6 +120,8 @@
           square c1 = new square();
           triangle t = new triangle();
           trapeze tr = new trapeze();
+
+          //e: Polymorphism on runtime 
           AreaFig a;    
     
           a = r;    
@@ -129,6 +131,12 @@
           a = c;    
           System.out.println("\nArea of Circle is : " +a.calculate(15,15,0));  
           
+          /*e: i know you are in a "rush", why dont you take your time
+          /to name your instance with a meaningful name, you have
+          many, many characters and different way of combinations to name
+          your instances. For this case, c1 can be confused with c, in the
+          worst case scenario, why dont you rename it starting with an "s",
+          since it is a square?*/
           a = c1;
           System.out.println("\nArea of Square is : " +a.calculate(4,4,0));  
           
